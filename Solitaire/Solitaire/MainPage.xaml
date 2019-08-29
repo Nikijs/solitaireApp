@@ -15,7 +15,9 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="5*" />
             </Grid.ColumnDefinitions>
-            <Grid x:Name="cardsGrid" HorizontalOptions="Center" ColumnSpacing="15" RowSpacing="20" Grid.Column="1">
+            <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Green" Grid.RowSpan="2"  HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="DarkGreen" Grid.RowSpan="2"  HorizontalOptions="FillAndExpand"/>
+            <Grid x:Name="cardsGrid" Grid.Column="1" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
@@ -41,9 +43,9 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 
+
             </Grid>
-            <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Green" Grid.RowSpan="2"  HorizontalOptions="FillAndExpand"/>
-            <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="DarkGreen" Grid.RowSpan="2"  HorizontalOptions="FillAndExpand"/>
+          
         </Grid>
         
     </StackLayout>

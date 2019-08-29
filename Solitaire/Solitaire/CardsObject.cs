@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace Solitaire
 {
-    class CardsObject
+    public class CardsObject
     {
         public CardsObject(Image image, string name)
         {
