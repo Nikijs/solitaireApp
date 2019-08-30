@@ -10,6 +10,128 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Cards\10C.png" />
+    <None Remove="Cards\10D.png" />
+    <None Remove="Cards\10H.png" />
+    <None Remove="Cards\10S.png" />
+    <None Remove="Cards\2C.png" />
+    <None Remove="Cards\2D.png" />
+    <None Remove="Cards\2H.png" />
+    <None Remove="Cards\2S.png" />
+    <None Remove="Cards\3C.png" />
+    <None Remove="Cards\3D.png" />
+    <None Remove="Cards\3H.png" />
+    <None Remove="Cards\3S.png" />
+    <None Remove="Cards\4C.png" />
+    <None Remove="Cards\4D.png" />
+    <None Remove="Cards\4H.png" />
+    <None Remove="Cards\4S.png" />
+    <None Remove="Cards\5C.png" />
+    <None Remove="Cards\5D.png" />
+    <None Remove="Cards\5H.png" />
+    <None Remove="Cards\5S.png" />
+    <None Remove="Cards\6C.png" />
+    <None Remove="Cards\6D.png" />
+    <None Remove="Cards\6H.png" />
+    <None Remove="Cards\6S.png" />
+    <None Remove="Cards\7C.png" />
+    <None Remove="Cards\7D.png" />
+    <None Remove="Cards\7H.png" />
+    <None Remove="Cards\7S.png" />
+    <None Remove="Cards\8C.png" />
+    <None Remove="Cards\8D.png" />
+    <None Remove="Cards\8H.png" />
+    <None Remove="Cards\8S.png" />
+    <None Remove="Cards\9C.png" />
+    <None Remove="Cards\9D.png" />
+    <None Remove="Cards\9H.png" />
+    <None Remove="Cards\9S.png" />
+    <None Remove="Cards\AC.png" />
+    <None Remove="Cards\AD.png" />
+    <None Remove="Cards\AH.png" />
+    <None Remove="Cards\AS.png" />
+    <None Remove="Cards\gray_back.png" />
+    <None Remove="Cards\JC.png" />
+    <None Remove="Cards\JD.png" />
+    <None Remove="Cards\JH.png" />
+    <None Remove="Cards\JS.png" />
+    <None Remove="Cards\KC.png" />
+    <None Remove="Cards\KD.png" />
+    <None Remove="Cards\KH.png" />
+    <None Remove="Cards\KS.png" />
+    <None Remove="Cards\QC.png" />
+    <None Remove="Cards\QD.png" />
+    <None Remove="Cards\QH.png" />
+    <None Remove="Cards\QS.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Cards\10C.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cards\10D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cards\10H.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cards\2D.png" />
+    <EmbeddedResource Include="Cards\2H.png" />
+    <EmbeddedResource Include="Cards\2S.png" />
+    <EmbeddedResource Include="Cards\10S.png" />
+    <EmbeddedResource Include="Cards\2C.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cards\3C.png" />
+    <EmbeddedResource Include="Cards\3D.png" />
+    <EmbeddedResource Include="Cards\3H.png" />
+    <EmbeddedResource Include="Cards\3S.png" />
+    <EmbeddedResource Include="Cards\4C.png" />
+    <EmbeddedResource Include="Cards\4D.png" />
+    <EmbeddedResource Include="Cards\4H.png" />
+    <EmbeddedResource Include="Cards\4S.png" />
+    <EmbeddedResource Include="Cards\5C.png" />
+    <EmbeddedResource Include="Cards\5D.png" />
+    <EmbeddedResource Include="Cards\5H.png" />
+    <EmbeddedResource Include="Cards\5S.png" />
+    <EmbeddedResource Include="Cards\6C.png" />
+    <EmbeddedResource Include="Cards\6D.png" />
+    <EmbeddedResource Include="Cards\6H.png" />
+    <EmbeddedResource Include="Cards\6S.png" />
+    <EmbeddedResource Include="Cards\7C.png" />
+    <EmbeddedResource Include="Cards\7D.png" />
+    <EmbeddedResource Include="Cards\7H.png" />
+    <EmbeddedResource Include="Cards\7S.png" />
+    <EmbeddedResource Include="Cards\8C.png" />
+    <EmbeddedResource Include="Cards\8D.png" />
+    <EmbeddedResource Include="Cards\8H.png" />
+    <EmbeddedResource Include="Cards\8S.png" />
+    <EmbeddedResource Include="Cards\9C.png" />
+    <EmbeddedResource Include="Cards\9D.png" />
+    <EmbeddedResource Include="Cards\9H.png" />
+    <EmbeddedResource Include="Cards\9S.png" />
+    <EmbeddedResource Include="Cards\AC.png" />
+    <EmbeddedResource Include="Cards\AD.png" />
+    <EmbeddedResource Include="Cards\AH.png" />
+    <EmbeddedResource Include="Cards\AS.png" />
+    <EmbeddedResource Include="Cards\gray_back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cards\JC.png" />
+    <EmbeddedResource Include="Cards\JD.png" />
+    <EmbeddedResource Include="Cards\JH.png" />
+    <EmbeddedResource Include="Cards\JS.png" />
+    <EmbeddedResource Include="Cards\KC.png" />
+    <EmbeddedResource Include="Cards\KD.png" />
+    <EmbeddedResource Include="Cards\KH.png" />
+    <EmbeddedResource Include="Cards\KS.png" />
+    <EmbeddedResource Include="Cards\QC.png" />
+    <EmbeddedResource Include="Cards\QD.png" />
+    <EmbeddedResource Include="Cards\QH.png" />
+    <EmbeddedResource Include="Cards\QS.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
   </ItemGroup>
 </Project>

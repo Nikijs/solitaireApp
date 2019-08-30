@@ -34,19 +34,28 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="140*" />
+                    <ColumnDefinition Width="140*" />
+                    <ColumnDefinition Width="140*" />
+                    <ColumnDefinition Width="140*" />
+                    <ColumnDefinition Width="140*" />
+                    <ColumnDefinition Width="140*" />
+                    <ColumnDefinition Width="140*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <Grid x:Name="deckGrid" Grid.Column="0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                 </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*" />
                 </Grid.ColumnDefinitions>
                 
-
             </Grid>
-          
-        </Grid>
+            </Grid>
         
     </StackLayout>
     
