@@ -4,6 +4,8 @@ Order the cards accoring to their color and ranking
 Instructions on how to play the game
 and information about the game can be found here: https://bicyclecards.com/how-to-play/solitaire/
 My inspiration was the google solitaire game on easy mode, instead of dealing 3 cards, deals 1 at a time
+Made using Visual Studio 2017 (Tested using UWP simulator, not tested on a device due to lack of resources)
+VS V15.9.9 .NET V4.8.03752
 
 ## Game Design Goals 
 My goal was to make a fully functional game of Solitaire on android and windows devices.
