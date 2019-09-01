@@ -7,15 +7,17 @@ namespace Solitaire
 {
     public class CardsObject
     {
-        public CardsObject(Image image, string name, Boolean isBlack)
+        public CardsObject(Image image, string name, Boolean isBlack, int prioroty)
         {
             Image = image;
             Name = name;
             IsBlack = isBlack;
+            Priority = prioroty;
         }
 
         public string Name { get; set; }
         public Image Image { get; set; }
         public Boolean IsBlack { get; set; }
+        public int Priority { get; set; }
     }
 }
