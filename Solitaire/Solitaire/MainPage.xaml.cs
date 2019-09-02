@@ -21,8 +21,10 @@ namespace Solitaire
         StackLayout decksp = new StackLayout { Padding = new Thickness(10, 10) };
         public int selectedPriority; //priority of card that is selected
         public Boolean isBlack;
+        public int selectedPriority2; 
+        public Boolean isBlack2;
 
-            public MainPage()
+        public MainPage()
         {
             InitializeComponent();
             LoadCards load = new LoadCards();
@@ -43,7 +45,6 @@ namespace Solitaire
                 for (int j = 0; j < 1; j++)
                 {
 
-                    
                     //Hidden card representing the whole deck of cards 
                     //3 more spaces saved for cards coming from the deck
                     if (i < 1)
@@ -56,17 +57,12 @@ namespace Solitaire
                         hide.GestureRecognizers.Add(tap);
                     }
 
-
                     decksp.WidthRequest = 100;
                     decksp.HeightRequest = 100;
-
-
                     decksp.HorizontalOptions = LayoutOptions.Fill;
                     decksp.VerticalOptions = LayoutOptions.Fill;
 
                     deckGrid.Children.Add(decksp);
-                   
-
                     Thread.Sleep(50);
                 }
             }
@@ -87,7 +83,6 @@ namespace Solitaire
                 for (int j = i; j < 7; j++)
                 {
                     int randomNumber = random.Next(cards.Count);
-
 
                     StackLayout sp = new StackLayout { Padding = new Thickness(10, 20) };
                     //top card will stay visible, others hidden
@@ -125,14 +120,24 @@ namespace Solitaire
             
         }
 
+        //card on table clicked event attempt.... difficulty aquiring the card priority
+        //this is where i got stuck
         private void Tap_Tapped3(object sender, EventArgs e)
         {
             Image stackCard = (Image)sender;
-           
 
-
-            //selectedPriority = cards[clicked card].Priority;
-           // isBlack = cards[clicked card].IsBlack;
+            for (int i = 0, length = cards.Count(); i < length; i++)
+            {
+                //tried to get the priority of card by matching the tapped card source 
+                //by checking if the cards list source matches, when debbuging stackCard shows null
+                
+                if (stackCard.Source == cards[i].Image.Source)
+                {
+                    selectedPriority2 = cards[i].Priority;
+                    isBlack2 = cards[i].IsBlack;
+                    
+                }
+            }
         }
 
         private void Tap_Tapped(object sender, EventArgs e)
@@ -188,8 +193,6 @@ namespace Solitaire
             last.BackgroundColor = Color.Red;
         }
 
-
-
         //Fisher-Yates shuffle acquired from stack overflow 
         private void Shuffle(List<CardsObject> list)
         {
@@ -215,12 +218,20 @@ namespace Solitaire
                 return game;
             });
 
-
             labelVar2.TextColor = Color.DarkGreen;
             labelVar2.FontSize = 15;
-
             labelVar2.HorizontalTextAlignment = TextAlignment.Start;
             labelVar2.VerticalTextAlignment = TextAlignment.Start;
+        }
+
+        //not implemented but the theory behind the priority and isBlack booleans 
+        public void matchCards(int selectedPriority, int selectedPriority2, Boolean isBlack, Boolean isBlack2)
+        {
+            //check first selected card is one number smaller than second selected card and is oposite color
+            if(selectedPriority == selectedPriority2-1 && isBlack != isBlack2)
+            {
+                //add to stack
+            }
         }
 
     }
