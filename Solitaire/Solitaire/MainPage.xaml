@@ -5,6 +5,9 @@
              x:Class="Solitaire.MainPage">
 
     <StackLayout>
+        <Label x:Name="labelVar2" Text="" TextDecorations="Underline"/>
+        <Label x:Name="labelVar" Text="" TextDecorations="Underline"/>
+        
         <!-- Place new controls here -->
         <Grid Padding="20" VerticalOptions="CenterAndExpand">
             <Grid.RowDefinitions>
@@ -43,6 +46,7 @@
                     <ColumnDefinition Width="140*" />
                 </Grid.ColumnDefinitions>
             </Grid>
+            
             <Grid x:Name="deckGrid" Grid.Column="0" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -55,7 +59,10 @@
                 </Grid.ColumnDefinitions>
                 
             </Grid>
+           
             </Grid>
+       
+           
         
     </StackLayout>
     
